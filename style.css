@@ -1,19 +1,17 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-
 }
 
-.hero{
+.container-header {
   position: relative;
   width: 100%;
   height: 30vh;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-nav {
+header {
   display: flex;
   width: 100%;
   margin: auto;
@@ -22,40 +20,16 @@ nav {
   justify-content: space-between;
 }
 
-nav ul li {
-  display:inline-block;
+header ul li {
+  display: inline-block;
   list-style: none;
   margin: 10px 20px;
 }
 
-nav ul li a {
+header ul li a {
   text-decoration: none;
-  color: #000000;
+  color: #000;
   font-weight: bold;
-}
-
-nav ul li a:hover{
-  color: brown;
-}
-
-.details{
-  margin: 8%;
-  margin-top: 15%;
-}
-
-.details h1 {
-  font-size: 5opx;
-  color: #222;
-  margin-bottom: 20px;
-}
-
-span {
-  color: #a52a2a;
-}
-
-.details p{
-  color: #5555;
-  line-height: 22px;
 }
 
 .details a {
@@ -69,14 +43,39 @@ span {
   border-radius: 5px;
 }
 
+header ul li a:hover {
+  color: brown;
+}
+
+.details {
+  margin: 8%;
+  margin-top: 15%;
+}
+
+.details h1 {
+  font-size: 50px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #a52a2a;
+}
+
+.details p {
+  color: #5555;
+  line-height: 22px;
+}
+
 .images {
   width: 45%;
-  height: 80%;position: absolute;
+  height: 80%;
+  position: absolute;
   bottom: 0;
   right: 100px;
 }
 
-.images img{
+.images img {
   height: 100%;
   position: absolute;
   left: 50%;
@@ -85,10 +84,6 @@ span {
   transition: bottom 1s, left 1s;
 }
 
-images:hover .shape{
- bottom: 40px;
-}
-
-.images .girl {
-  left: 45%;
+.images:hover .shape {
+  bottom: 40px;
 }
